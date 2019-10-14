@@ -12,4 +12,3 @@ This application should allow a user to edit the content on a website.
 - CSS<br/>
 - JavaScript<br/>
 - React<br/>
-- API from this site: [rapidapi.com/andruxnet/api/random-famous-quotes/endpoints](rapidapi.com/andruxnet/api/random-famous-quotes/endpoints)
