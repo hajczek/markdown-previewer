@@ -12,3 +12,4 @@ This application should allow a user to edit the content on a website.
 - CSS<br/>
 - JavaScript<br/>
 - React<br/>
+- [A markdown parser and compiler](https://github.com/markedjs/marked)
