@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import './App.css';
+import marked from 'marked';
 
 class App extends Component {
   constructor(props) {
@@ -11,7 +12,7 @@ class App extends Component {
 
   updateTextareaValue = (e) => {
     this.setState({
-      textareaValue: e.target.value
+      textareaValue: (e.target.value)
     });
   }
 
@@ -19,8 +20,8 @@ class App extends Component {
     let { textareaValue } = this.state;
     return (
       <div className="App">
-        <textarea id="editor" value={this.state.textareaValue} onChange={this.updateTextareaValue}></textarea>
-        <div id="preview">{this.state.textareaValue}</div>
+        <textarea id="editor" value={textareaValue} onChange={this.updateTextareaValue}></textarea>
+        <div id="preview">{marked(textareaValue)}</div>
       </div>
     )
   } 
