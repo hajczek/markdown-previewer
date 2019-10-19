@@ -6,13 +6,20 @@ class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      textareaValue: ''
+      textareaValue: ""
     }
+  }
+
+  convert = () => {
+    var clearText = marked(this.state.textareaValue);
+    return {
+      __html: clearText
+    };
   }
 
   updateTextareaValue = (e) => {
     this.setState({
-      textareaValue: (e.target.value)
+      textareaValue: e.target.value
     });
   }
 
@@ -20,8 +27,8 @@ class App extends Component {
     let { textareaValue } = this.state;
     return (
       <div className="App">
-        <textarea id="editor" value={textareaValue} onChange={this.updateTextareaValue}></textarea>
-        <div id="preview">{marked(textareaValue)}</div>
+        <textarea id="editor" value={textareaValue} onChange={this.updateTextareaValue}>{textareaValue}</textarea>
+        <span id="preview" dangerouslySetInnerHTML={this.convert()} />
       </div>
     )
   } 
