@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import './App.css';
-import './normalize.css';
+import './assets/css/styles.css';
+import './assets/css/normalize.css';
 import marked from 'marked';
 import text from './assets/data/text';
 
