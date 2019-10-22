@@ -2,11 +2,25 @@
   background-color: #eee;
 }
 
+.App {
+  width: 100%;
+}
+
 .content {
   display: flex;  
   flex-direction: row;
   justify-content: center;
   height: 100vh;
+}
+
+.header {
+  padding: 25px 0;
+  background-color: #bbb;
+}
+
+.header h1 {
+  text-align: center;
+  margin-top: 0;
 }
 
 #preview {
@@ -27,11 +41,29 @@
   width: 100%;
 }
 
-.header {
-  padding: 25px 0;
-  background-color: #bbb;
-}
-.header h1 {
-  text-align: center;
-  margin-top: 0;
+@media screen and (max-width: 1000px) {
+  .content {  
+    flex-direction: column;
+    height: auto;
+    width: 100%;
+  }
+
+  .header h1 {
+    font-size: 1.8rem;
+  }
+
+  #preview {
+    width: 90%;
+    height: auto;
+    padding: 5%;
+  }
+  
+  .textA {
+    width: 90%;
+    padding: 5%;
+  }
+
+  img {
+    width: 100%;
+  }
 }
