@@ -3,6 +3,9 @@ import './assets/css/styles.css';
 import './assets/css/normalize.css';
 import marked from 'marked';
 import text from './assets/data/text';
+import Header from './components/Header';
+import TextArea from './components/TextArea';
+import Preview from './components/Preview';
 
 class App extends Component {
   constructor(props) {
@@ -29,17 +32,15 @@ class App extends Component {
     let { textareaValue } = this.state;
     return (
       <div className="App">
-        <div class="header">
-          <h1>Markdown Previewer</h1>
-        </div>
+        <Header />
         <div class="content">
-          <span id="preview" dangerouslySetInnerHTML={this.convert()} />
-          <div class="textA">
-            <h2>Editor for content</h2>
-            <p>You can change a content of box on left side in textarea below.</p>
-            <p>Use markdown syntax to format your content.</p>
-            <textarea id="editor" rows="30" value={textareaValue} onChange={this.updateTextareaValue}>{textareaValue}</textarea>
-          </div>
+          <Preview
+            dangerouslySetInnerHTML={this.convert()} 
+          />
+          <TextArea 
+            textareaValue = {textareaValue}
+            updateTextareaValue = {this.updateTextareaValue}
+          />
         </div>
       </div>
     )
