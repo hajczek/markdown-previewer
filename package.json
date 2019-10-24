@@ -2,6 +2,7 @@
   "name": "markdown-previewer",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://hajczek.github.io/markdown-previewer/",
   "dependencies": {
     "marked": "^0.7.0",
     "react": "^16.10.2",
