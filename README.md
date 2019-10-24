@@ -6,10 +6,10 @@ Editable text field with the possibility of using Markdown markup language for t
 
 This application have two fields: 
 1. with text content,
-2. with editor for field with text content.
+2. with editor for field with text content.<br/>
 You can change content of text field with using editor.<br/>
 You can formatting text with using Markdown markup language.<br/>
-The information about how use Markdown markup language is on content field. 
+The information about how to use Markdown markup language is on the content field.
 
 ### WHAT USED FOR THIS APPLICATION
 
