@@ -1,15 +1,28 @@
 # PROJECT 'MARKDOWN PREVIEWER'
 
-In progress.<br/>
+Editable text field with the possibility of using Markdown markup language for text formatting
 
-## DESCRIPTION - How this code should works
+## DESCRIPTION - How this code works
 
-This application should allow a user to edit the content on a website.
+This application have two fields: 
+1. with text content,
+2. with editor for field with text content.
+You can change content of text field with using editor.<br/>
+You can formatting text with using Markdown markup language.<br/>
+The information about how use Markdown markup language is on content field. 
 
-### TECHNOLOGIES WHICH WILL USE FOR THIS APPLICATION
+### WHAT USED FOR THIS APPLICATION
 
 - HTML<br/>
 - CSS<br/>
 - JavaScript<br/>
 - React<br/>
 - [A markdown parser and compiler](https://github.com/markedjs/marked)
+
+### LINK 
+
+[Link to this project online](https://hajczek.github.io/markdown-previewer/)
+
+### LICENSE
+
+The MIT License - See [license.md](https://github.com/hajczek/markdown-previewer/blob/master/license/License.md)
