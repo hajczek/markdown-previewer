@@ -23,7 +23,7 @@ The information about how to use Markdown markup language is on the content fiel
 
 ### LINK 
 
-[Link to this project online](https://hajczek.github.io/markdown-previewer/)
+[Link to this project online](https://hajczek.github.io/markdown-previewer/ "title" target="_blank")
 
 ### LICENSE
 
