@@ -19,7 +19,7 @@ The information about how to use Markdown markup language is on the content fiel
 - JavaScript<br/>
 - React<br/>
 - [A markdown parser and compiler](https://github.com/markedjs/marked)
-- [Random picture from Lorem Pixum] (https://picsum.photos/)
+- Random picture from [Lorem Pixum](https://picsum.photos/)
 
 ### LINK 
 
